@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.20.5] - 2024-05-30
+
+- Fix: This updates the behavior of the failure condition introduced in `0.20.2`; the SDK
+  now throws an error whenever we fail to refresh an access token even if `neverThrowErrors`
+  is set. We treat this failure as a systematic exception, so it's OK to throw in this case.
+
 ## [0.20.4] - 2024-05-29
 
 - Fix: Functionality to generate integration tests against a mock server has been disabled.

@@ -4,6 +4,7 @@
 
 import * as core from "../../core";
 import { Auth } from "../../api/resources/auth/client/Client";
+import * as errors from "../../errors/index";
 
 /**
  * The OAuthTokenProvider retrieves an OAuth access token, refreshing it as needed.
